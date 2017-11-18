@@ -1,4 +1,4 @@
-FROM golang:1.8.0-alpine
+FROM golang:1.8.5-alpine3.6
 
 ENV PORT "3000"
 EXPOSE 3000
