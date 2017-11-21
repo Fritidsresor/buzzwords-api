@@ -51,6 +51,8 @@ func main() {
 	r.HandleFunc("/suffix", suffixHandler)
 	r.HandleFunc("/verb", verbsHandler)
 	r.HandleFunc("/verbsuffix", verbsAndSuffixHandler)
+	r.HandleFunc("/health", verbsAndSuffixHandler)
+
 
 	// Prometheus metrics
 	r.Handle("/metrics", promhttp.Handler())
