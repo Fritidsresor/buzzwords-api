@@ -10,7 +10,7 @@ RUN apk update && \
     apk add git && \
     rm -rf /var/cache/apk/*
 
-
+COPY basic_health.sh /local/basic_health.sh
 RUN go install github.com/hajhatten/buzzwords-api
 
 CMD ["buzzwords-api"]
