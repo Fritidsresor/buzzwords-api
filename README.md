@@ -35,3 +35,4 @@ Rikard Gynnerstedt
 ## License
 
 MIT.
+
