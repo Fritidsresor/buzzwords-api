@@ -7,7 +7,7 @@ node {
         checkout scm
         git_ch = sh(returnStdout: true, script: 'git rev-parse --short HEAD || echo "unknown"').trim()
 	  }
-    containerDeployAndVerify{
+    containerDeployDualRegistries{
      version = git_ch
      team = "ops"
      service = "buzzwords-api"
